@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="关键词,关键词,关键词">
+	<meta name="description" content="详情描述">
+	<title>自定义界面</title>
+	<link rel="shortcut icon" href="a.ico" type="x/image-icon">
+	<link rel="stylesheet" href="./css/jquery-ui.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/index.js"></script>
+</head>
+<body>	
+	<!--装矩形的盒子-->
+	<div id="box">
+		<ul class="box_first"></ul>	
+		<div id="zhezhao" class="styleToggle">
+			<ul class="box_second">
+				<!--显示网格
+					<li style="width:100px; height:100px"></li>   
+					<li style="width:100px; height:100px"></li>
+				-->
+			</ul>	
+		</div>
+	</div>
+	
+
+
+	<!--左侧边栏-->
+	<button id="btn_left">折叠<<</button>
+	<div id="leftBar">
+		<!--添加矩形的盒子-->
+		<div id="addBox">添加元素
+			<ul>
+				<li><a href="#">圆角矩形</a></li>
+				<li><a href="#">矩形</a></li>
+				<li><a href="#">矩形背景</a></li>
+				<li><a href="#">背景换肤</a></li>
+				<li><a href="#">隐藏皮肤</a></li>
+				<li><a href="#">网格隐现</a></li>
+			</ul>
+			
+		</div>
+
+		<!--装图片缩影-->
+		<div id="smallPic">
+			<ul>
+			<!--样式
+				<li><img src="./images/bg-1.jpg" alt="" width="100" height="100"></li>
+				<li><img src="./images/bg-1.jpg" alt="" width="100" height="100"></li>		
+			-->
+			</ul>
+		</div>
+	</div>
+
+	<!--用于输入属性值调节数字的-->
+	<div id="shuxing">
+		<input type="text" id="inp" placeholder="输入数值" title=''>
+		<button id="submit">提交</button>
+	</div>
+
+	<!--用于矩形背景和整个背景换肤的-->
+	<div id="change_bg">
+		<ul>
+			<li><img></li>
+			<li><img></li>
+			<li><img></li>
+			<li><img></li>
+			<li><img></li>
+			<li><img></li>
+			<li><img></li>
+		</ul>
+	</div>
+
+
+
+	<!--调节菜单-->
+	<ul id="menu">
+		<li><a href="#">运动速度</a></li>
+		<li><a href="#">圆角大小</a></li>
+		<li><a href="#">长宽度</a></li>
+		<li><a href="#">删除</a></li>
+		<li><a href="#">网格大小</a></li>
+	</ul>
+
+
+<script>
+
+</script>
+</body>
+</html>

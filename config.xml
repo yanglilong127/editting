@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <report_play>yes</report_play> <!--no-->
+    <long_tap>yes</long_tap> <!--yes|no-->
+    <swiper>
+        <freeModeMinimumVelocity>0.2</freeModeMinimumVelocity>
+        <scrollbarLazyMove>true</scrollbarLazyMove>
+    </swiper>
+    <global>
+        <font_color>#FFF</font_color>
+        <background>
+            <image>img/superhd_inner_bg.png</image>
+        </background>
+        <navigation>
+            <position>
+                <height>10%</height>
+                <logo_height>62.5%</logo_height>
+                <logo_top>18.75%</logo_top>
+                <icon_height>100%</icon_height>
+                <icon_top>0</icon_top>
+            </position>
+        </navigation>
+    </global>
+    <home>
+        <!-- 1024 * 600, 1280 * 800, 1366 * 768, 1706 * 960 -->
+        <thumb_carousel_interval>8</thumb_carousel_interval> <!--second-->
+        <background>
+            <image>img/superhd_bg.png</image>
+        </background>
+        <logo>
+            <image>img/logo.png</image> <!--img/logo.png-->
+        </logo>
+        <container>
+            <position>
+                <width>1280</width> <!--px-->
+                <height>530</height>
+                <top>120</top>
+                <left>105</left>
+            </position>
+        </container>
+        <functions>
+            <function>
+                <name_key>Movie</name_key> <!--locales key-->
+                <target type="html">view/movie.html</target> <!--target page-->
+                <icon>img/superhd_ic_movie.png</icon> <!--function icon-->
+                <show>thumbnail</show> <!--thumbnail or just text or ad-->
+                <background>
+                    <color>#5ba31c</color>
+                    <img_api>/funmedia/movie/list/</img_api> <!--show movie poster-->
+                    <img_file>img/superhd_img_movie.png</img_file>
+                </background>
+                <position> <!--function position and size-->
+                    <width>260</width>
+                    <height>530</height>
+                    <top>120</top>
+                    <left>105</left>
+                </position>
+                <slide>1</slide> <!--page for slide-->
+            </function>
+            <function>
+                <name_key>Music</name_key>
+                <target type="html">view/music.html</target>
+                <icon>img/superhd_ic_music.png</icon>
+                <show>thumbnail</show>
+                <background>
+                    <color>#2d73ad</color>
+                    <img_api>/funmedia/music/list/</img_api> <!--show image-->
+                    <img_file>img/superhd_img_music.png</img_file>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>260</height>
+                    <top>120</top>
+                    <left>375</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Radio</name_key>
+                <target type="html">view/radio.html</target>
+                <icon>img/superhd_ic_radio.png</icon>
+                <show>text</show>
+                <background>
+                    <img_file>img/superhd_img_cover1.png</img_file> <!--small block use cover1-->
+                    <color>#A9C700</color>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>125</height>
+                    <top>390</top>
+                    <left>375</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>TV</name_key>
+                <target type="html">view/tv.html</target>
+                <icon>img/superhd_ic_tv.png</icon>
+                <show>text</show>
+                <background>
+                    <img_file>img/superhd_img_cover1.png</img_file> <!--small block use cover1-->
+                    <color>#FF9D00</color>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>125</height>
+                    <top>525</top>
+                    <left>375</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Route</name_key>
+                <target type="apk">"com.msi.android.oldtripinfo", "com.msi.android.oldtripinfo.TripInfo", null</target>
+                <icon>img/superhd_ic_route.png</icon>
+                <show>text</show>
+                <background>
+                    <img_file>img/superhd_img_cover1.png</img_file> <!--small block use cover1-->
+                    <color>#DC4B3F</color>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>125</height>
+                    <top>120</top>
+                    <left>645</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Game</name_key>
+                <target type="apk">"com.funtoro.android.apkonair", ".MainActivity", null</target>
+                <icon>img/superhd_ic_game.png</icon>
+                <show>text</show>
+                <background>
+                    <img_file>img/superhd_img_cover1.png</img_file> <!--small block use cover1-->
+                    <color>#447FD3</color>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>125</height>
+                    <top>255</top>
+                    <left>645</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Ordering_System</name_key>
+                <target type="apk">"com.funtoro.funordersystem", "com.funtoro.funordersystem.OrderSystem_main", null</target>
+                <icon>img/superhd_ic_ordering.png</icon>
+                <show>thumbnail</show>
+                <background>
+                    <color></color>
+                    <img_api>/funmedia/custom/ordering/list</img_api> <!--show image-->
+                    <img_file></img_file>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>260</height>
+                    <top>120</top>
+                    <left>915</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key></name_key>
+                <target type="ad"></target>
+                <show>ad</show>
+                <background>
+                    <color>#2d73ad</color>
+                    <img_file>img/superhd_ad.jpg</img_file>
+                </background>
+                <position>
+                    <width>530</width>
+                    <height>260</height>
+                    <top>390</top>
+                    <left>645</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Internet</name_key>
+                <target type="apk">"android.intent.action.VIEW","http://www.baidu.com/index.php?tn=monline_5_dg"</target>
+                <icon>img/superhd_ic_internet.png</icon>
+                <show>text</show>
+                <background>
+                    <img_file>img/superhd_img_cover1.png</img_file> <!--small block use cover1-->
+                    <color>#51bc99</color>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>125</height>
+                    <top>120</top>
+                    <left>1185</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Survey</name_key>
+                <target type="html">view/survey.html</target>
+                <icon>img/superhd_ic_survey.png</icon>
+                <show>text</show>
+                <background>
+                    <img_file>img/superhd_img_cover1.png</img_file> <!--small block use cover1-->
+                    <color>#CC338E</color>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>125</height>
+                    <top>255</top>
+                    <left>1185</left>
+                </position>
+                <slide>1</slide>
+            </function>
+            <function>
+                <name_key>Photo</name_key>
+                <target type="html">view/photo.html</target>
+                <icon>img/superhd_ic_photo.png</icon>
+                <show>thumbnail</show>
+                <background>
+                    <color>#43bac5</color>
+                    <img_api>/funmedia/photo/list/</img_api> <!--show image-->
+                    <img_file>img/superhd_img_photo.png</img_file>
+                </background>
+                <position>
+                    <width>260</width>
+                    <height>260</height>
+                    <top>390</top>
+                    <left>1185</left>
+                </position>
+                <slide>1</slide>
+            </function>
+        </functions>
+        <function_name>
+            <position>
+                <height>60</height>
+            </position>
+        </function_name>
+    </home>
+    <movie>
+        <container>
+            <position> <!--this percent is for body-->
+                <width>100%</width>
+                <height>66%</height>
+                <top>20%</top>
+                <left>0</left>
+            </position>
+        </container>
+        <swiper>
+            <position> <!--this percent is for body-->
+                <width>84%</width>
+                <left>8%</left>
+            </position>
+        </swiper>
+        <block>
+            <num>5</num><!--each row number-->
+            <position> <!--this percent is for body-->
+                <width>14%</width>
+                <height>42%</height>
+                <vertical_space>6%</vertical_space>
+                <poster_height>32%</poster_height>
+            </position>
+        </block>
+        <show_all_play>yes</show_all_play> <!--yes|no-->
+    </movie>
+    <movie_intro>
+        <container>
+            <position> <!--this percent is for body-->
+                <width>82%</width>
+                <height>77%</height>
+                <top>10%</top>
+                <left>9%</left>
+            </position>
+        </container>
+        <left_btn>
+            <position>
+                <width>7%</width>
+                <top>37.25%</top>
+                <left>2%</left>
+            </position>
+        </left_btn>
+        <right_btn>
+            <position>
+                <width>7%</width>
+                <top>37.25%</top>
+                <right>2%</right>
+            </position>
+        </right_btn>
+    </movie_intro>
+    <music>
+        <container>
+            <position> <!--this percent is for body-->
+                <width>100%</width>
+                <height>67%</height>
+                <top>20%</top>
+                <left>0</left>
+            </position>
+        </container>
+        <swiper>
+            <position> <!--this percent is for body-->
+                <width>84%</width>
+                <left>8%</left>
+            </position>
+        </swiper>
+        <block>
+            <num>5</num><!--each row number-->
+            <position> <!--this percent is for body-->
+                <width>14%</width>
+                <height>32.5%</height>
+                <vertical_space>6%</vertical_space>
+                <poster_height>22.5%</poster_height>
+            </position>
+        </block>
+    </music>
+    <music_play>
+        <container>
+            <position>
+                <width>100%</width> 
+                <height>70%</height>
+                <top>17%</top>
+                <left>0</left>
+            </position>
+        </container>
+        <album>
+            <position>
+                <width>28%</width> 
+                <height>37.5%</height>
+                <top>20%</top>
+                <left>12%</left>
+            </position>
+        </album>
+        <mode_button>
+            <random>
+                <width>6.25%</width> 
+                <top>60.5%</top>
+                <left>21%</left>
+            </random>
+            <loop>
+                <width>6.25%</width> 
+                <top>60.5%</top>
+                <left>28.25%</left>
+            </loop>
+        </mode_button>
+        <tracklist>
+            <position>
+                <width>43%</width> 
+                <height>55%</height>
+                <top>22%</top>
+                <left>46%</left>
+            </position>
+        </tracklist>
+        <left_btn>
+            <position>
+                <width>7%</width>
+                <top>37.25%</top>
+                <left>2%</left>
+            </position>
+        </left_btn>
+        <right_btn>
+            <position>
+                <width>7%</width>
+                <top>37.25%</top>
+                <right>2%</right>
+            </position>
+        </right_btn>
+        <control_bar>
+            <position>
+                <width>100%</width> <!--100px/1280px-->
+                <height>80px</height>
+                <top>77%</top>
+            </position>
+        </control_bar>
+    </music_play>
+    <radio>
+        <container>
+            <position> <!--this percent is for body-->
+                <width>100%</width>
+                <height>77%</height>
+                <top>10%</top>
+                <left>0</left>
+            </position>
+        </container>
+        <button>
+            <position>
+                <width>21.5%</width>
+                <height>34.375%</height>
+                <margin>2%</margin>
+            </position>
+        </button>
+        <radio_background>
+            <position>
+                <width>100%</width>
+                <height>56.25%</height>
+                <bottom>100px</bottom>
+            </position>
+        </radio_background>
+        <internet>
+            <channel_info>
+                <width>45%</width>
+                <height>77%</height>
+            </channel_info>
+            <channel_list>
+                <width>44%</width> 
+                <height>65%</height>
+                <top>17%</top>
+                <left>45%</left>
+            </channel_list>
+        </internet>
+    </radio>
+    <photo>
+        <container>
+            <position> <!--this percent is for body-->
+                <width>100%</width>
+                <height>73%</height>
+                <top>14%</top>
+                <left>0</left>
+            </position>
+        </container>
+        <swiper>
+            <position> <!--this percent is for body-->
+                <width>92%</width>
+                <left>4%</left>
+            </position>
+        </swiper>
+        <block_height>31%</block_height>
+        <photo_height>100%</photo_height>
+        <left_btn>
+            <position>
+                <width>7%</width>
+                <top>47.25%</top>
+                <left>2%</left>
+            </position>
+        </left_btn>
+        <right_btn>
+            <position>
+                <width>7%</width>
+                <top>47.25%</top>
+                <right>2%</right>
+            </position>
+        </right_btn>
+    </photo>
+    <modui>
+        <!-- 1024 * 600, 1280 * 800, 1366 * 768, 1706 * 960 -->
+        <background>
+            <image>img/mod/bg.png</image>
+        </background>
+        <container>
+            <position>
+                <width>1280</width> <!--px-->
+                <height>556</height>
+                <top>85</top>
+                <left>185</left>
+            </position>
+        </container>
+        <function_name>
+            <position>
+                <height>75</height>
+            </position>
+        </function_name>
+        <functions>
+            <function>
+                <name_key>Movie</name_key> <!--locales key-->
+                <target type="html">view/movie.html</target> <!--target page-->
+                <icon>img/mod/btn_movie.png</icon> <!--function icon-->
+                <select_icon>img/mod/btn_movie_press.png</select_icon>
+                <position> <!--function position and size-->
+                    <width>243</width>
+                    <height>259</height>
+                    <top>85</top>
+                    <left>185</left>
+                </position>
+            </function>
+            <function>
+                <name_key>Music</name_key>
+                <target type="html">view/music.html</target>
+                <icon>img/mod/btn_music.png</icon> <!--function icon-->
+                <select_icon>img/mod/btn_music_press.png</select_icon>
+                <position>
+                    <width>243</width>
+                    <height>259</height>
+                    <top>85</top>
+                    <left>518</left>
+                </position>
+            </function>
+            <function>
+                <name_key>Photo</name_key>
+                <target type="html">view/photo.html</target>
+                <icon>img/mod/btn_photo.png</icon> <!--function icon-->
+                <select_icon>img/mod/btn_photo_press.png</select_icon>
+                <position>
+                    <width>243</width>
+                    <height>259</height>
+                    <top>85</top>
+                    <left>850</left>
+                </position>
+            </function>
+            <function>
+                <name_key>Internet</name_key>
+                <target type="apk">"android.intent.action.VIEW","http://www.baidu.com/index.php?tn=monline_5_dg"</target>
+                <icon>img/mod/btn_internet.png</icon> <!--function icon-->
+                <select_icon>img/mod/btn_internet_press.png</select_icon>
+                <position>
+                    <width>243</width>
+                    <height>259</height>
+                    <top>382</top>
+                    <left>185</left>
+                </position>
+            </function>
+            <function>
+                <name_key>Game</name_key>
+                <target type="apk">"com.funtoro.android.apkonair", ".MainActivity", null</target>
+                <icon>img/mod/btn_game.png</icon> <!--function icon-->
+                <select_icon>img/mod/btn_game_press.png</select_icon>
+                <position>
+                    <width>243</width>
+                    <height>259</height>
+                    <top>382</top>
+                    <left>518</left>
+                </position>
+            </function>
+            <function>
+                <name_key>AD</name_key>
+                <target type="ad"></target>
+                <icon>img/mod/btn_ad.png</icon> <!--function icon-->
+                <select_icon>img/mod/btn_ad_press.png</select_icon>
+                <position>
+                    <width>243</width>
+                    <height>259</height>
+                    <top>382</top>
+                    <left>850</left>
+                </position>
+            </function>
+        </functions>
+    </modui>
+    <survey>
+        <container>
+            <position> <!--this percent is for body-->
+                <width>100%</width>
+                <height>73%</height>
+                <top>14%</top>
+                <left>0</left>
+            </position>
+        </container>
+        <swiper>
+            <position> <!--this percent is for body-->
+                <width>92%</width>
+                <left>4%</left>
+            </position>
+        </swiper>
+    </survey>
+</root>

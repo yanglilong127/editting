@@ -1,0 +1,47 @@
+*{margin:0 auto; padding:0}
+a{text-decoration: none;}
+ul,li{list-style: none}
+html,body{width:100%; height:100%}
+#box{width: 800px; height:600px; margin-top:20px; position:relative; background: #000;
+	background-repeat: no-repeat; background-size:100% auto;}
+#box ul.box_first li{width:200px; height:100px;  position:absolute; background-repeat:no-repeat; background-size:100% 100%; 
+		 background:center top /cover; cursor:pointer;  overflow: hidden; z-index:2}
+#box ul.box_first li p{width:100%; height:30px;  background:rgba(0,0,0,0.5); position:absolute; bottom:-30px; 
+		text-align:center;  line-height:30px; color:white}
+#box ul.box_first li.borderRadius{ border-radius:8px;}
+#zhezhao{overflow:hidden; width:100%; height:100%; position:absolute; z-index:1 }
+#zhezhao.styleToggle{display:none}
+#box ul.box_second{}
+#box ul.box_second li{ float:left; box-sizing: border-box; border:1px green dashed; }
+
+
+
+/*左侧边栏*/
+#btn_left{position: fixed;left:210px; top:50px; padding:5px; border-radius:5px; cursor:pointer; z-index:2}
+#btn_left:hover{background:#3F9060}
+#leftBar{width:110px;  position: fixed;left:100px; top:50px; z-index:2}
+#addBox{position: absolute; left:0; top:0; width:100px; text-align: center; padding:5px; cursor: pointer; 
+		border-radius:10px; box-shadow:0 0 10px #FFFFFF; background:#715656;
+	 -webkit-box-reflect:above -1px -webkit-linear-gradient(bottom,rgba(0,0,0,0) 70%,rgba(0,0,0,0.5) 100%)}
+#addBox ul{display: none; }
+#addBox ul li a{line-height: 20px; color:#120303; display:block;}
+#addBox ul li:hover{background:#ccc;  border-radius: 5px; }
+#smallPic{position: absolute; left:0; top:35px; width:100px; background:#715656;}
+#smallPic ul li{margin-top:5px}
+
+
+/*拖动助手*/
+.ui-resizable-helpBorder{border:1px solid green}
+/*菜单*/
+#menu{padding:2px; width:95px; position:absolute; display:none; text-align:center; border-radius:8px; z-index:2}
+#menu li a{ width:90px; display:block; padding:0; height:25px; line-height:25px;}
+/*输入数据框*/
+#shuxing{position:absolute;  width:200px; height:auto; right:118px; top:32px}
+#inp{z-index:20; position:absolute; top:0px; left:0px; border-radius:5px; height:25px;text-indent: 8px}
+#submit{z-index:20; position:absolute; top:-2px; left:164px; border-radius:50%; height:30px;}
+
+/*用于矩形背景和整个背景换肤的*/
+#change_bg{position: absolute; right:100px; top:70px; width:210px; background:#715656; padding:5px; display:none}
+#change_bg ul li{margin:5px 5px 0 0; cursor:pointer; float:left}
+#change_bg ul li img{width:100px; height:100px}
+
